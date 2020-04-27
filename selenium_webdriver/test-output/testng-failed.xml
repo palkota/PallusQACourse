@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="browsername" value="chrome"/>
+  <test thread-count="5" name="testcase2(failed)">
+    <classes>
+      <class name="tests.SearchLink">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="f" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- tests.SearchLink -->
+    </classes>
+  </test> <!-- testcase2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
